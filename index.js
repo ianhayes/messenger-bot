@@ -272,7 +272,7 @@ class Bot extends EventEmitter {
       return res.end(query['hub.challenge'])
     }
 
-    return res.end('Error, wrong validation token')
+    // return res.end('Error, wrong validation token')
   }
 
   _handleEvent (type, event) {
