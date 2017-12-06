@@ -62,7 +62,7 @@ tap.test('GET webhook with incorrect verify token', (t) => {
     }, (err, res, body) => {
       t.error(err, 'response should not error')
       t.equals(res.statusCode, 200, 'request should return status code 200')
-      // t.equals(body, 'Error, wrong validation token', 'response body returned error')
+      t.equals(body, 'Error, wrong validation token', 'response body returned error')
       t.end()
     })
   })
